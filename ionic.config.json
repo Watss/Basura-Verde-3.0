@@ -1,0 +1,7 @@
+{
+  "name": "Basura Verde",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
