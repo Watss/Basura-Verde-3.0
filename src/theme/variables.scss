@@ -1,6 +1,36 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
+@import 'tailwindcss/base';
 
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'inter';
+  src: url('../assets/fonts/inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'inter-bold';
+  src: url('../assets/fonts/inter-Bold.ttf');
+
+}
+
+@font-face {
+  font-family: 'inter-semi-bold';
+  src: url('../assets/fonts/inter-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'inter-medium';
+  src: url('../assets/fonts/inter-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'inter-light';
+  src: url('../assets/fonts/inter-Light.ttf');
+}
 /** Ionic CSS Variables **/
 :root {
 	--ion-color-primary: #34b132;
