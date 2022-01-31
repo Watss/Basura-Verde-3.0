@@ -1,13 +1,13 @@
 <ion-tabs #tabs>
 
   <!-- -------------------Custom Tabs with fab button------------------------------- -->
-  <ion-fab vertical="bottom" horizontal="center" >
-    <ion-fab-button routerLink="/tabs/add-post" translucent color="primary">
+  <ion-fab vertical="bottom" horizontal="center">
+    <ion-fab-button (click)="goMap()" translucent color="primary">
       <ion-icon name="location-sharp"></ion-icon>
     </ion-fab-button>
   </ion-fab>
   <ion-tab-bar slot="bottom" class="ion-no-border">
-    <ion-tab-button tab="search" class="search">
+    <ion-tab-button tab="home" class="search">
       <ion-icon name="home" color="primary"></ion-icon>
       <ion-label color="medium">Inicio</ion-label>
     </ion-tab-button>
