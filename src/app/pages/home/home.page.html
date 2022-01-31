@@ -1,9 +1,48 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
 </ion-header>
-
-<ion-content>
-
+<ion-content fullscreen color="light">
+  <div class="first-section h-60 ">
+    <div class="flex justify-center px-5 pt-4">
+        <div class="m-0 mr-auto">
+              <img src="https://picsum.photos/200/300" class="custom-avatar" alt="">
+        </div>
+        <div class="flex flex-col justify-center items-start m-0 mx-auto main-header">
+            <ion-text color="light" class="opacity-70 text-xs" >Ubicación actual</ion-text>
+            <div class="flex justify-between items-center w-full">
+              <ion-icon name="location-outline" class="text-white" style="font-size: 10px"></ion-icon>
+              <ion-text color="light" class="text-sm font-bold">Chillán</ion-text>
+              <ion-icon name="chevron-down-outline" class="text-white" style="font-size: 10px" ></ion-icon>
+            </div>
+        </div>
+        <div class="m-0 ml-auto w-100 flex justify-center items-center">
+          <ion-icon name="notifications" style="font-size: 25px;" class="text-white"></ion-icon>
+          <div class="custom-notification-icon"></div>
+        </div>
+    </div>
+    <div class="mt-10 h-60 custom-radius-box">
+      <div class="px-6 pt-6">
+        <ion-text color="dark" class="text-xl">¿Que quieres reciclar?</ion-text>
+        <div class="grid grid-cols-2 gap-4 py-6">
+          <div class="card-type type-1">
+            <ion-text color="light" class="text-xl font-semibold">Pilas</ion-text>
+          </div>
+          <div class="card-type type-2"><ion-text color="light" class="text-xl font-semibold">Plásticos</ion-text></div>
+          <div class="card-type type-3"><ion-text color="light" class="text-xl font-semibold">Vidrios</ion-text></div>
+          <div class="card-type type-4"><ion-text color="light" class="text-xl font-semibold">Latas</ion-text></div>
+        </div>
+        <ion-text color="dark" class="text-xl">Articulos de reciclaje</ion-text>
+        <div class="articles-section pt-4 pb-20">
+            <div class="h-32 card-article rounded-2xl flex justify-start items-center my-4 p-4" *ngFor="let article of articles" role="button" (click)="openArticleSite(article.url)">
+              <div class="image-card-article w-20 h-20 rounded-2xl">
+                <img (error)="onImgError($event)" [src]="article.thread.main_image" class="object-cover h-full w-full rounded-2xl">
+              </div>
+              <div class="card-article-description px-5 w-3/5 h-full overflow-hidden align-middle">
+                <ion-text class="text-white font-bold text-xs item-text-wrap ">{{ article.title }}</ion-text>
+              </div>
+              <ion-icon icon="bookmark" class="mb-auto m-0 ml-auto text-white"></ion-icon>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>

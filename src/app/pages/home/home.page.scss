@@ -1,0 +1,87 @@
+.first-section{
+  background-color: var(--ion-color-primary);
+  .custom-avatar{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+  }
+}
+
+.custom-notification-icon{
+  position: relative;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: orange;
+    top: 5px;
+    right: 9px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .main-header{
+    ion-text{
+      color: var(--ion-color-dark);
+    }
+  }
+}
+
+
+.custom-radius-box{
+  background-color: var(--ion-color-light);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.card-type{
+  height: 9.0625rem;
+  width: 100%;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: .75rem;
+
+  @media (prefers-color-scheme: dark) {
+    ion-text{
+      color: white !important;
+    }
+  }
+}
+
+.type-1{
+  background-image: url('../../../assets/backgrounds/1.png');
+  @media (prefers-color-scheme: dark) {
+    background-image: url("../../../assets/backgrounds/d-1.png");
+  }
+}
+
+.type-2{
+  background-image: url('../../../assets/backgrounds/2.png');
+  @media (prefers-color-scheme: dark) {
+    background-image: url("../../../assets/backgrounds/d-2.png");
+  }
+}
+
+.type-3{
+  background-image: url('../../../assets/backgrounds/3.png');
+  @media (prefers-color-scheme: dark) {
+    background-image: url("../../../assets/backgrounds/d-3.png");
+  }
+}
+
+.type-4{
+  background-image: url('../../../assets/backgrounds/4.png');
+  @media (prefers-color-scheme: dark) {
+    background-image: url("../../../assets/backgrounds/d-4.png");
+  }
+}
+
+.card-article{
+  background-color: var(--ion-color-primary) ;
+}
+
+ion-header{
+  background-color: var(--ion-color-primary);
+  height: var(--ion-safe-area-top);
+}

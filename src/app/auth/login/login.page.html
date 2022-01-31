@@ -1,3 +1,46 @@
+<ion-header class="ion-no-border" translucent>
+  <ion-toolbar color="transparent">
+  </ion-toolbar>
+</ion-header>
 <ion-content [fullscreen]="true">
+  <div class="h-full justify-center flex flex-col container-width-desktop">
+    <div class="flex justify-center items-center">
+      <img src="assets/login-ilustration.svg" class="h-40"  alt="">
+    </div>
 
+    <div class="px-8 pt-10">
+      <h3 class="m-0 title-primary">Inicio de Sesión</h3>
+
+      <div class="inputs-container py-5">
+        <ion-item class="ion-no-padding py-2">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" placeholder="miusuario@gmail.com"></ion-input>
+        </ion-item>
+        <ion-item class="ion-no-padding py-2">
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" placeholder="Contraseña" autocomplete="off" class="primary-input"></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="flex flex-col justify-center items-center w-full px-5 pt-4">
+        <ion-button color="primary" expand="block" class="w-full">
+          Ingresar
+        </ion-button>
+
+        <ion-label class="px-2 pt-6 text-sm" color="tertiary">También puedes usar...</ion-label>
+      </div>
+
+      <div class="flex justify-center items-center w-full pt-4 px-6">
+        <ion-button color="light" mode="ios" class="custom-square-button mx-4">
+          <ion-icon slot="icon-only" src="assets/icon/google.svg"></ion-icon>
+        </ion-button>
+
+        <ion-button color="light" mode="ios" class="custom-square-button mx-4">
+          <ion-icon slot="icon-only" src="assets/icon/facebook.svg"></ion-icon>
+        </ion-button>
+      </div>
+
+
+    </div>
+  </div>
 </ion-content>

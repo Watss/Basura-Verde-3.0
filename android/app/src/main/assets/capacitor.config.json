@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Basura Verde",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

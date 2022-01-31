@@ -24,3 +24,54 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.title-primary{
+  font-family: var(--bold-font);
+  font-size: 1.75rem;
+  color: var(--ion-color-dark);
+  text-align: left;
+}
+.custom-square-button{
+  border: 1px solid var(--ion-color-medium);
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.title-point{
+  color: var(--ion-color-secondary);
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
+  font-weight: bold;
+}
+
+.mapboxgl-popup-content{
+  background-color: var(--ion-color-light);
+}
+
+.mapboxgl-popup-close-button{
+  padding: .5rem;
+  border:unset;
+  button:focus-visible{
+    outline: none;
+    outline-color: none;
+    outline-style: none;
+    outline-width: none;
+  }
+}
+
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+  border-top-color: var(--ion-color-light) !important;
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
+  border-bottom-color: var(--ion-color-light) !important;
+}
+
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip{
+  border-right-color: var(--ion-color-light) !important;
+}
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
+  border-left-color: var(--ion-color-light) !important;
+}
+
